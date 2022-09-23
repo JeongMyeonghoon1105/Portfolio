@@ -15,7 +15,6 @@ root.render(
     <ProSidebar>
       <Menu iconShape="square">
         <SubMenu title="Portfolio">
-          Hello World
           <MenuItem>Introductions</MenuItem>
           <MenuItem>Projects</MenuItem>
         </SubMenu>
