@@ -22,4 +22,12 @@ function App() {
   );
 }
 
+function Header() {
+  return (
+    <header>
+      <h1><a href="/">Hello World</a></h1>
+    </header>
+  );
+}
+
 export default App;
