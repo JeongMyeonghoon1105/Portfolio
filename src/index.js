@@ -1,26 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
+import Side from './Side';
 import reportWebVitals from './reportWebVitals';
-
 // npm install react-pro-sidebar
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+// npm install styled-components
+import { ProSidebar, SidebarHeader, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/*<App />*/}
-    <ProSidebar>
-      <Menu iconShape="square">
-        <SubMenu title="Portfolio">
-          <MenuItem>Introductions</MenuItem>
-          <MenuItem>Projects</MenuItem>
-        </SubMenu>
-        <MenuItem>Blog</MenuItem>
-      </Menu>
-    </ProSidebar>
+    <Side/>
   </React.StrictMode>
 );
 
