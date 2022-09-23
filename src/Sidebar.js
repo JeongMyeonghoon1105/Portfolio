@@ -7,7 +7,7 @@ import {
   SidebarHeader,
 } from "react-pro-sidebar";
 
-const Side =  () => {
+const Sidebar =  () => {
   return (
     <ProSidebar
       style={{
@@ -33,7 +33,6 @@ const Side =  () => {
           }}>
           <MenuItem>About</MenuItem>
           <MenuItem>Projects</MenuItem>
-          <MenuItem>Stacks</MenuItem>
         </SubMenu>
         <MenuItem style={{
             "font-size": "1.2rem"
@@ -43,4 +42,4 @@ const Side =  () => {
   )
 }
 
-export default Side;
+export default Sidebar;

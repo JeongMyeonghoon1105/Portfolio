@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Side from './Side';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 // npm install react-pro-sidebar
 // npm install styled-components
@@ -11,7 +11,7 @@ import 'react-pro-sidebar/dist/css/styles.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Side/>
+    <App/>
   </React.StrictMode>
 );
 
