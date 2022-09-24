@@ -46,7 +46,7 @@
 
 /* rgb(189, 93, 57) */
 .pro-sidebar-inner {
-  background-color: rgb(50, 6, 88) !important;
+  background-color: rgb(189, 93, 57) !important;
   display: flex;
   align-items: center;
   position: relative;
@@ -55,9 +55,11 @@
 .pro-sidebar-layout {
   position: absolute;
   width: 300px;
-  height: 450px !important;
+  height: 500px !important;
   top: 0;
   bottom: 0;
+  margin: auto 0 !important;
+  overflow: hidden !important;
 }
 
 .pro-menu {
