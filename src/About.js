@@ -1,6 +1,6 @@
 import './App.css';
 
-function Main() {
+function About() {
   return (
     <div style={{ "margin-top": "30px", "margin-left": "450px" }}>
       <p style={{ "font-weight": "bold", "font-size": "2.5rem" }}>Jeong Myeonghoon</p>
@@ -17,4 +17,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default About;

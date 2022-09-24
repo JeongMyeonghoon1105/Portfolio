@@ -1,13 +1,9 @@
-import Sidebar from './Sidebar';
-import Main from './Main';
+import Basic from './Basic';
 import './App.css';
 
 function App() {
   return (
-    <div style={{ display: "flex" }}>
-      <Sidebar/>
-      <Main/>
-    </div>
+    <Basic/>
   );
 }
 
