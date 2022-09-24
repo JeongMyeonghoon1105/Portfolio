@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+/* ************************************** */
+.side-bar {
+  position: fixed !important;
+  background-color: #E55E00 !important;
+  width: 300px !important;
+  height: 100vh !important;
+}
+
+.pro-sidebar-inner {
+  background-color: rgb(189, 93, 57) !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.pro-sidebar-layout {
+  position: absolute;
+  width: 300px;
+  height: 450px !important;
+  top: 0;
+  bottom: 0;
+}
+
+.pro-menu {
+  margin-bottom: 50px !important;
+}
+
+.sidebar:before {
+  background-color: #E55E00 !important;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+.accent {
+  font-size: 1.3rem !important;
+  font-weight: bold;
+  color: white;
+}
