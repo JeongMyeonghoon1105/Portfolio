@@ -40,13 +40,13 @@
 /* ************************************** */
 .side-bar {
   position: fixed !important;
-  background-color: #E55E00 !important;
   width: 300px !important;
   height: 100vh !important;
 }
 
+/* rgb(189, 93, 57) */
 .pro-sidebar-inner {
-  background-color: rgb(189, 93, 57) !important;
+  background-color: rgb(50, 6, 88) !important;
   display: flex;
   align-items: center;
   position: relative;
@@ -62,10 +62,6 @@
 
 .pro-menu {
   margin-bottom: 50px !important;
-}
-
-.sidebar:before {
-  background-color: #E55E00 !important;
 }
 
 .image {
