@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/post', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build/test.html'));
+  res.send('hello');
 });
 
 app.listen(port, () => {
