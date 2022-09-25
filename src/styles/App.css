@@ -1,3 +1,7 @@
+:root {
+  --active-font: rgb(129, 129, 129);
+}
+
 .App {
   text-align: center;
 }
@@ -46,7 +50,7 @@
 
 /* rgb(189, 93, 57) */
 .pro-sidebar-inner {
-  background-color: rgb(189, 93, 57) !important;
+  background-color: #C5D0E6 !important;
   display: flex;
   align-items: center;
   position: relative;
@@ -78,4 +82,21 @@
   font-size: 1.3rem !important;
   font-weight: bold;
   color: white;
+}
+
+.pro-item-content:hover {
+  color: var(--active-font) !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item.active {
+  color: var(--active-font) !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:focus {
+  outline: none;
+  color: var(--active-font) !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:hover {
+  color: var(--active-font) !important;
 }
