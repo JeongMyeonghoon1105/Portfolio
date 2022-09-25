@@ -6,11 +6,13 @@ const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'test.html'));
+  res.sendFile(path.join(__dirname, 'build/index.html'));
 });
 
-// app.get('/post', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'build/test.html'));
-// });
+app.get('/post', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build/test.html'));
+});
 
-app.listen(port);
+app.listen(port, () => {
+  console.log("Server Running On Port 3000");
+});
