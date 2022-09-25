@@ -1,10 +1,10 @@
-import './App.css';
+import '../styles/App.css';
 
 function About() {
   return (
     <div style={{ position: "absolute", top: "0", bottom: "0", margin: "auto 70px", height: "700px" }}>
       <p style={{ "font-weight": "bold", "font-size": "4rem" }}>
-        JEONG <text style={{ color: "rgb(110, 30, 130)" }}>MYEONGHOON</text>
+        JEONG <text style={{ color: "rgb(189, 93, 57)" }}>MYEONGHOON</text>
       </p>
       <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>Education</p>
       <p style={{ "font-size": "1rem", lineHeight: "1.8rem" }}>

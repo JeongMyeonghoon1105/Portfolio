@@ -2,7 +2,7 @@ import React from "react";
 import About from './About';
 import Projects from './Projects';
 import Blog from './Blog';
-import './App.css';
+import '../styles/App.css';
 import {useState} from "react";
 
 import {
