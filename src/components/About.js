@@ -15,7 +15,7 @@ function About() {
       <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>Experiences</p>
       <p style={{ "font-size": "1rem", lineHeight: "1.8rem" }}>
         동탄 코딩랩학원 강사 (2022 - )<br></br>
-        대한민국 공군 복무 (2020 - 2021)
+        대한민국 공군 항공통제병 근무 (2020 - 2021)
       </p>
       <br></br>
       <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>Contact</p>
