@@ -6,11 +6,11 @@ const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build/index.html'));
-});
-
-app.get('https://jeongmyeonghoon.herokuapp.com/post', (req, res) => {
   res.sendFile(path.join(__dirname, 'build/test.html'));
 });
+
+// app.get('/post', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'build/test.html'));
+// });
 
 app.listen(port);
