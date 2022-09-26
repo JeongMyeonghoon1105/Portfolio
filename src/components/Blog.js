@@ -1,10 +1,6 @@
-import '../styles/App.css';
-
 function Blog() {
   return (
-    <div style={{ "margin-top": "30px", "margin-left": "450px" }}>
-      Blog
-    </div>
+    <div></div>
   );
 }
 

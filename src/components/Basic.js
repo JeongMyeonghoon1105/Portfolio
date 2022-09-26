@@ -1,8 +1,8 @@
 import React from "react";
+import '../styles/Basic.css';
 import About from './About';
 import Projects from './Projects';
 import Blog from './Blog';
-import '../styles/App.css';
 import {useState} from "react";
 
 import {

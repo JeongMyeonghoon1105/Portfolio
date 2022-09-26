@@ -1,0 +1,22 @@
+.about-body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 70px;
+  height: 700px;
+}
+
+.about-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.about-subtitle {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.about-content {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
