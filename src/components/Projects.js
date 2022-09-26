@@ -26,7 +26,7 @@ function Projects() {
         <br></br>
         <br></br>
         <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>
-          사용 기술
+          Technology
         </p>
         <hr></hr>
         <p style={{ "font-weight": "bold", "font-size": "1.2rem" }}>Frontend</p>
@@ -40,10 +40,7 @@ function Projects() {
           <li>Ubuntu Server</li>
         </ul>
         <br></br>
-        <br></br>
-        <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>
-          상세 정보
-        </p>
+        <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>Details</p>
         <hr></hr>
         <a href="https://github.com/JeongMyeonghoon1105/CodingLab">
           https://github.com/JeongMyeonghoon1105/CodingLab
