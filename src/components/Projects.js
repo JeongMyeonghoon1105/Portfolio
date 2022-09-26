@@ -14,17 +14,16 @@ function Projects() {
       <div>
         <p style={{ "font-weight": "bold", "font-size": "2rem" }}>
           1. 코딩랩학원 웹사이트
+          <button href="http://동탄코딩랩.com">바로가기</button>
+          <button href="https://github.com/JeongMyeonghoon1105/CodingLab">
+            Github
+          </button>
         </p>
         <img
           src="https://github.com/JeongMyeonghoon1105/Images/blob/main/CodingLab.png?raw=true"
           alt=""
           style={{ width: "1000px" }}
         ></img>
-        <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>URL</p>
-        <hr></hr>
-        <a href="http://동탄코딩랩.com">http://동탄코딩랩.com</a>
-        <br></br>
-        <br></br>
         <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>
           Technology
         </p>
@@ -39,13 +38,6 @@ function Projects() {
           <li>MySQL</li>
           <li>Ubuntu Server</li>
         </ul>
-        <br></br>
-        <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>Details</p>
-        <hr></hr>
-        <a href="https://github.com/JeongMyeonghoon1105/CodingLab">
-          https://github.com/JeongMyeonghoon1105/CodingLab
-        </a>
-        <br></br>
       </div>
     </div>
   );
