@@ -19,3 +19,11 @@ a {
   text-decoration: none;
   color: #ffa600;
 }
+
+button {
+  background-color: #c5d0e6;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  padding: 0 20px;
+}
