@@ -1,0 +1,16 @@
+.blog-body {
+  margin: 100px 70px;
+  padding-bottom: 100px;
+  width: 100%;
+  min-height: 700px;
+}
+
+.blog-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.blog-subtitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
