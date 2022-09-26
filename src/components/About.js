@@ -9,7 +9,7 @@ function About() {
       <p className={ "about-subtitle" }>Education</p>
       <p className={ "about-content" }>
         서울시립대학교 정경대학 재학<br></br>
-        한동대학교 전산전자공학부 중퇴
+        서원고등학교 졸업 (14회)
       </p>
       <br></br>
       <p className={ "about-subtitle" }>Experiences</p>
