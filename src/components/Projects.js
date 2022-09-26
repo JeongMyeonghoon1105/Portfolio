@@ -20,14 +20,18 @@ function Projects() {
           style={{ width: "1000px" }}
         ></img>
         <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>URL</p>
+        <hr></hr>
         <a href="http://동탄코딩랩.com">http://동탄코딩랩.com</a>
         <br></br>
         <br></br>
         <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>
           사용 기술
         </p>
+        <hr></hr>
         <p style={{ "font-weight": "bold", "font-size": "1.2rem" }}>Frontend</p>
-        jQuery
+        <ul>
+          <li>jQuery</li>
+        </ul>
         <p style={{ "font-weight": "bold", "font-size": "1.2rem" }}>Backend</p>
         <ul>
           <li>Node.js express</li>
@@ -39,6 +43,7 @@ function Projects() {
         <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>
           상세 정보
         </p>
+        <hr></hr>
         <a href="https://github.com/JeongMyeonghoon1105/CodingLab">
           https://github.com/JeongMyeonghoon1105/CodingLab
         </a>
