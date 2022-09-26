@@ -8,10 +8,10 @@ function Projects() {
       <div>
         <div style={{ "display": "flex", "font-weight": "bold", "font-size": "2rem", "line-height": "40px !important" }}>
           <div>1. 코딩랩학원 웹사이트</div>
-          <a href="http://동탄코딩랩.com" className={ "link" }>
+          <a href="http://동탄코딩랩.com" className={ "link" } target={ "_blank" }>
             바로가기
           </a>
-          <a href="https://github.com/JeongMyeonghoon1105/CodingLab" className={ "link" }>
+          <a href="https://github.com/JeongMyeonghoon1105/CodingLab" className={ "link" } target={ "_blank" }>
             Github
           </a>
         </div>
