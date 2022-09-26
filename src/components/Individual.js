@@ -17,7 +17,7 @@ function Individual(props) {
       <p className={ "indiv-subtitle" }>
         Technology
       </p>
-      <hr></hr>
+      <div className={ "indiv-hr" }></div>
     </div>
   );
 }
