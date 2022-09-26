@@ -17,16 +17,16 @@ code {
 
 a {
   text-decoration: none;
-  color: #ffa600;
 }
 
 button {
-  background-color: #c5d0e6;
+  background-color: rgb(255, 200, 0);
   border: none;
   font-size: 1rem;
+  text-align: center;
   color: white;
   margin: 0 20px;
-  width: 40px;
-  height: 2rem;
+  width: 80px;
+  height: 40px;
   border-radius: 10px;
 }
