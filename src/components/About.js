@@ -9,13 +9,12 @@ function About() {
       <p className={ "about-subtitle" }>Education</p>
       <p className={ "about-content" }>
         서울시립대학교 정경대학 재학<br></br>
-        서원고등학교 졸업 (14회)
+        한동대학교 전산전자공학부 중퇴
       </p>
       <br></br>
       <p className={ "about-subtitle" }>Experiences</p>
       <p className={ "about-content" }>
         동탄 코딩랩학원 강사 (2022 - )<br></br>
-        대한민국 공군 항공통제병 근무 (2020 - 2021)
       </p>
       <br></br>
       <p className={ "about-subtitle" }>Contact</p>
