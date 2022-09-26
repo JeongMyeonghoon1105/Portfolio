@@ -2,7 +2,13 @@ import "../styles/App.css";
 
 function Projects() {
   return (
-    <div style={{ margin: "100px 70px", width: "100%", "min-height": "700px" }}>
+    <div
+      style={{
+        margin: "100px 70px 200px 70px",
+        width: "100%",
+        "min-height": "700px",
+      }}
+    >
       <p style={{ "font-weight": "bold", "font-size": "4rem" }}>Projects</p>
       <div>
         <p style={{ "font-weight": "bold", "font-size": "2rem" }}>
@@ -23,7 +29,12 @@ function Projects() {
         <p style={{ "font-weight": "bold", "font-size": "1.2rem" }}>Frontend</p>
         jQuery
         <p style={{ "font-weight": "bold", "font-size": "1.2rem" }}>Backend</p>
-        Node.js express MySQL Ubuntu Server
+        <ul>
+          <li>Node.js express</li>
+          <li>MySQL</li>
+          <li>Ubuntu Server</li>
+        </ul>
+        <br></br>
         <br></br>
         <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>
           상세 정보
