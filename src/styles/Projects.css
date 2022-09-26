@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+  text-align: start;
+  align-items: start;
+}
+
+.project-body {
+  margin: 100px 70px;
+  padding-bottom: 100px;
+  width: 100%;
+  min-height: 700px;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.link {
+  display: block;
+  background-color: rgb(255, 200, 0);
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-left: 20px;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  line-height: 40px;
+}
+
+img {
+  width: 80%;
+}

@@ -1,39 +1,30 @@
 import "../styles/App.css";
+import "../styles/Projects.css"
 
 function Projects() {
   return (
-    <div
-      style={{
-        margin: "100px 70px",
-        "padding-bottom": "100px",
-        width: "100%",
-        "min-height": "700px",
-      }}
-    >
+    <div className={ "project-body" }>
       <p style={{ "font-weight": "bold", "font-size": "4rem" }}>Projects</p>
       <div>
-        <p style={{ "font-weight": "bold", "font-size": "2rem" }}>
-          1. 코딩랩학원 웹사이트
-          <button href="http://동탄코딩랩.com">바로가기</button>
-          <button href="https://github.com/JeongMyeonghoon1105/CodingLab">
+        <div style={{ "display": "flex", "font-weight": "bold", "font-size": "2rem", "line-height": "40px !important" }}>
+          <div>1. 코딩랩학원 웹사이트</div>
+          <a href="http://동탄코딩랩.com" className={ "link" }>
+            바로가기
+          </a>
+          <a href="https://github.com/JeongMyeonghoon1105/CodingLab" className={ "link" }>
             Github
-          </button>
-        </p>
-        <img
-          src="https://github.com/JeongMyeonghoon1105/Images/blob/main/CodingLab.png?raw=true"
-          alt=""
-          style={{ width: "1000px" }}
-        ></img>
+          </a>
+        </div>
+        <br></br><br></br>
+        <img src="https://github.com/JeongMyeonghoon1105/Images/blob/main/CodingLab.png?raw=true" alt=""></img>
         <p style={{ "font-weight": "bold", "font-size": "1.5rem" }}>
           Technology
         </p>
         <hr></hr>
         <p style={{ "font-weight": "bold", "font-size": "1.2rem" }}>Frontend</p>
-        <ul>
-          <li>jQuery</li>
-        </ul>
+        <ul style={{ "line-height": "1.5rem" }}><li>jQuery</li></ul>
         <p style={{ "font-weight": "bold", "font-size": "1.2rem" }}>Backend</p>
-        <ul>
+        <ul style={{ "line-height": "1.5rem" }}>
           <li>Node.js express</li>
           <li>MySQL</li>
           <li>Ubuntu Server</li>
