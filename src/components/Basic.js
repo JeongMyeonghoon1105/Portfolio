@@ -16,6 +16,7 @@ import {
 function Basic() {
   const [mode, setMode] = useState('About');
   let content = null;
+  let src = "https://github.com/JeongMyeonghoon1105/Images/blob/main/profile1.jpeg?raw=true";
 
   if (mode === 'About') {
     content = <About/>
@@ -23,6 +24,7 @@ function Basic() {
     content = <Projects/>
   } else {
     content = <Blog/>
+    src = "https://github.com/JeongMyeonghoon1105/Images/blob/main/IMG_0366.jpeg?raw=true";
   }
 
   return (
@@ -31,7 +33,7 @@ function Basic() {
         <ProSidebar className={"side-bar"}>
           <div className={"side-bar-inner"} style={{ width: "300px" }}>
             <SidebarHeader className={"image"}>
-              <img src="https://github.com/JeongMyeonghoon1105/Images/blob/main/profile1.jpeg?raw=true" alt="profile" style={{ width: "100%", height: "100%" }}></img>
+              <img src={src} alt="profile" className={ "profile" }></img>
             </SidebarHeader>
             <Menu iconShape="square" style={{ margin: "0px 50px" }}>
               <MenuItem className={"accent"} onClick={() => { setMode('About'); }}>About</MenuItem>
