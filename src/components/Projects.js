@@ -4,7 +4,8 @@ function Projects() {
   return (
     <div
       style={{
-        margin: "100px 70px 200px 70px",
+        margin: "100px 70px",
+        "padding-bottom": "100px",
         width: "100%",
         "min-height": "700px",
       }}
