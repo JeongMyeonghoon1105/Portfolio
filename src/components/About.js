@@ -2,7 +2,7 @@ import '../styles/About.css'
 
 function About() {
   return (
-    <div className={ "about-body" }>
+    <div className={ "about-body" } id={"about-container"}>
       <p className={ "about-title" }>
         JEONG <text style={{ color: "#C5D0E6" }}>MYEONGHOON</text>
       </p>

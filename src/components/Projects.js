@@ -3,7 +3,7 @@ import Individual from "./Individual.js"
 
 function Projects() {
   return (
-    <div className={ "project-body" }>
+    <div className={ "project-body" } id={ "projects-container "}>
       <p className={ "proj-title" }>Projects</p>
       <div>
         <Individual
