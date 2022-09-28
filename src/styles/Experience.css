@@ -1,0 +1,20 @@
+.experience-body {
+  margin: 100px 70px;
+  width: 80%;
+  height: 100vh;
+}
+
+.experience-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.experience-subtitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(129, 129, 129);
+}
+
+.experience-content {
+  line-height: 1.5rem;
+}

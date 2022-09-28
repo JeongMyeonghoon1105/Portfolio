@@ -14,7 +14,8 @@
 .about-subtitle {
   font-weight: bold;
   font-size: 1.5rem;
-  color: rgb(185, 185, 185);
+  color: rgb(129, 129, 129);
+  padding: none;
 }
 
 .about-content {
