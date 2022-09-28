@@ -19,12 +19,22 @@ function Basic() {
   let src = "https://github.com/JeongMyeonghoon1105/Images/blob/main/profile1.jpeg?raw=true";
 
   document.addEventListener('scroll', (event) => {
-    let about = document.getElementById("about-container").clientHeight;
+    let about = document.getElementById("about-container").scrollHeight;
+    let projects = document.getElementById("projects-container").scrollHeight;
+    console.log(projects)
     
-    if (window.scrollY > about) {
-      console.log('project');
+    if (window.scrollY > projects) {
+      document.getElementById("about-tab").style.color="white";
+      document.getElementById("projects-tab").style.color="white";
+      document.getElementById("blog-tab").style.color="gray";
+    } else if (window.scrollY > about) {
+      document.getElementById("about-tab").style.color="white";
+      document.getElementById("projects-tab").style.color="gray";
+      document.getElementById("blog-tab").style.color="white";
     } else {
-      console.log('about');
+      document.getElementById("about-tab").style.color="gray";
+      document.getElementById("projects-tab").style.color="white";
+      document.getElementById("blog-tab").style.color="white";
     }
     // let first = document.getElementById("about-container").clientHeight;
     // let second = document.getElementById("projects-container").clientHeight;
@@ -59,7 +69,7 @@ function Basic() {
             <Menu iconShape="square" style={{ margin: "0px 50px" }}>
               <MenuItem className={"accent"} id={"about-tab"}>About</MenuItem>
               <MenuItem className={"accent"} id={"projects-tab"}>Projects</MenuItem>
-              <MenuItem className={"accent"}>Tech Blog</MenuItem>
+              <MenuItem className={"accent"} id={"blog-tab"}>Tech Blog</MenuItem>
             </Menu>
           </div>
         </ProSidebar>
