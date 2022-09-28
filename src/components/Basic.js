@@ -49,7 +49,7 @@ function Basic() {
     <div style={{ margin: "0", width: "100vw", display: "flex" }}>
       <div style={{ width: "300px" }}>
         <ProSidebar className={"side-bar"}>
-          <div className={"side-bar-inner"} style={{ width: "300px" }}>
+          <div className={"side-bar-inner"} style={{ width: "300px", height: "100vh" }}>
             <SidebarHeader className={"image"}>
               <img src={src} alt="profile" className={ "profile" }></img>
             </SidebarHeader>
