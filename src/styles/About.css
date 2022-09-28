@@ -3,17 +3,18 @@
   top: 0;
   bottom: 0;
   margin: auto 70px;
-  height: 700px;
+  height: 400px;
 }
 
 .about-title {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .about-subtitle {
   font-weight: bold;
   font-size: 1.5rem;
+  color: rgb(185, 185, 185);
 }
 
 .about-content {

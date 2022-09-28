@@ -43,6 +43,11 @@ img.profile {
   font-size: 1.3rem !important;
   font-weight: bold;
   color: white;
+  padding: 7px 20px;
+}
+
+.accent:hover {
+  cursor: pointer;
 }
 
 .pro-item-content:hover {

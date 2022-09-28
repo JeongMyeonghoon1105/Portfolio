@@ -14,14 +14,11 @@ import {
 } from "react-pro-sidebar";
 
 function Basic() {
-  // const [mode, setMode] = useState('About');
-  // let content = null;
   let src = "https://github.com/JeongMyeonghoon1105/Images/blob/main/profile1.jpeg?raw=true";
 
   document.addEventListener('scroll', (event) => {
     let about = document.getElementById("about-container").scrollHeight;
     let projects = document.getElementById("projects-container").scrollHeight;
-    console.log(projects)
     
     if (window.scrollY > projects) {
       document.getElementById("about-tab").style.color="white";
@@ -36,24 +33,7 @@ function Basic() {
       document.getElementById("projects-tab").style.color="white";
       document.getElementById("blog-tab").style.color="white";
     }
-    // let first = document.getElementById("about-container").clientHeight;
-    // let second = document.getElementById("projects-container").clientHeight;
-
-    // if (window.scrollY > first + second) {
-    //   console.log('project-section');
-    // } else if (window.scrollY > first) {
-    //   console.log('blog-section')
-    // }
   });
-
-  // if (mode === 'About') {
-  //   content = <About/>
-  // } else if (mode === 'Projects') {
-  //   content = <Projects/>
-  // } else {
-  //   content = <Blog/>
-  //   src = "https://github.com/JeongMyeonghoon1105/Images/blob/main/IMG_0366.jpeg?raw=true";
-  // }
 
   return (
     <div style={{ margin: "0", width: "100vw", display: "flex" }}>
@@ -63,21 +43,19 @@ function Basic() {
             <SidebarHeader className={"image"}>
               <img src={src} alt="profile" className={ "profile" }></img>
             </SidebarHeader>
-            {/* <div style={{ width: "200px", height: "20px",  margin: "10px 50px" }} className={ "accent" }>
-              hello
-            </div> */}
             <Menu iconShape="square" style={{ margin: "0px 50px" }}>
-              <MenuItem className={"accent"} id={"about-tab"}>About</MenuItem>
-              <MenuItem className={"accent"} id={"projects-tab"}>Projects</MenuItem>
-              <MenuItem className={"accent"} id={"blog-tab"}>Tech Blog</MenuItem>
+              <div className={"accent"} id={"about-tab"} onClick={() => { document.getElementById("about-top").scrollIntoView({behavior: "smooth"}) }}>About</div>
+              <div className={"accent"} id={"projects-tab"} onClick={() => { document.getElementById("projects-top").scrollIntoView({behavior: "smooth"}) }}>Projects</div>
+              <div className={"accent"} id={"blog-tab"} onClick={() => { document.getElementById("blog-container").scrollIntoView({behavior: "smooth"}) }}>Tech Blog</div>
             </Menu>
           </div>
         </ProSidebar>
       </div>
-      <div style={{ display: "block", width: "100%", position: "absolute", "margin-left": "300px" }}>
-        <div style={{ width: "70vw", height: "100vh", position: "relative" }}>
+      <div id={ "about-top" } style={{ display: "block", width: "100vw", "margin-left": "200px" }}>
+        <div style={{ width: "70vw", height: "100vh" }}>
           <About/>
         </div>
+        <div style={{ width: "100%", height: "0px", border: "none" }} id={ "projects-top" }></div>
         <Projects/>
         <Blog/>
       </div>
