@@ -4,7 +4,7 @@ import Individual from "./Individual.js"
 function Projects() {
   return (
     <div className={ "project-body" } id={ "projects-container" }>
-      <p className={ "proj-title" }>Projects</p>
+      <p className={ "proj-title" }>PROJECTS</p>
       <div>
         <Individual
           title="1. 코딩랩학원 웹사이트"

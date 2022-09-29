@@ -65,3 +65,10 @@ img.profile {
 .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:hover {
   color: var(--active-font) !important;
 }
+
+.line {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: lightgray;
+}

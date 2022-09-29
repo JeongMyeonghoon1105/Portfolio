@@ -46,7 +46,7 @@ function Basic() {
   });
 
   return (
-    <div style={{ margin: "0", width: "100vw", display: "flex" }}>
+    <div style={{ margin: "0", width: "100vw", display: "flex", "overflow-x": "hidden" }}>
       <ProSidebar className={"side-bar"}>
         <div className={"side-bar-inner"} style={{ width: "300px", height: "100vh" }}>
           <SidebarHeader className={"image"}>
@@ -60,14 +60,15 @@ function Basic() {
           </Menu>
         </div>
       </ProSidebar>
-      <div id={ "about-top" } style={{ display: "block", width: "100%", "margin-left": "300px" }}>
-        <div style={{ width: "70vw", height: "100vh" }}>
+      <div id={ "about-top" } style={{ display: "block", width: "100%", "margin-left": "300px", "overflow-x": "hidden" }}>
+        <div style={{ width: "100%", height: "100vh" }}>
           <About/>
         </div>
-        <div style={{ width: "100%", height: "0px", border: "none" }} id={ "experience-top" }></div>
+        <div className={ "line" } id={ "experience-top" }></div>
         <Experience/>
-        <div style={{ width: "100%", height: "0px", border: "none" }} id={ "projects-top" }></div>
+        <div className={ "line" } id={ "projects-top" }></div>
         <Projects/>
+        <div className={ "line" }></div>
         <Blog/>
       </div>
     </div>
