@@ -47,22 +47,20 @@ function Basic() {
 
   return (
     <div style={{ margin: "0", width: "100vw", display: "flex" }}>
-      <div style={{ width: "300px" }}>
-        <ProSidebar className={"side-bar"}>
-          <div className={"side-bar-inner"} style={{ width: "300px", height: "100vh" }}>
-            <SidebarHeader className={"image"}>
-              <img src={src} alt="profile" className={ "profile" }></img>
-            </SidebarHeader>
-            <Menu iconShape="square" style={{ margin: "0px 50px" }}>
-              <div className={"accent"} id={"about-tab"} onClick={() => { document.getElementById("about-top").scrollIntoView({behavior: "smooth"}) }}>ABOUT</div>
-              <div className={"accent"} id={"experience-tab"} onClick={() => { document.getElementById("experience-top").scrollIntoView({behavior: "smooth"}) }}>DETAILS</div>
-              <div className={"accent"} id={"projects-tab"} onClick={() => { document.getElementById("projects-top").scrollIntoView({behavior: "smooth"}) }}>PROJECTS</div>
-              <div className={"accent"} id={"blog-tab"} onClick={() => { document.getElementById("blog-container").scrollIntoView({behavior: "smooth"}) }}>TECH BLOG</div>
-            </Menu>
-          </div>
-        </ProSidebar>
-      </div>
-      <div id={ "about-top" } style={{ display: "block", width: "100vw", "margin-left": "200px" }}>
+      <ProSidebar className={"side-bar"}>
+        <div className={"side-bar-inner"} style={{ width: "300px", height: "100vh" }}>
+          <SidebarHeader className={"image"}>
+            <img src={src} alt="profile" className={ "profile" }></img>
+          </SidebarHeader>
+          <Menu iconShape="square" style={{ margin: "0px 50px" }}>
+            <div className={"accent"} id={"about-tab"} onClick={() => { document.getElementById("about-top").scrollIntoView({behavior: "smooth"}) }}>ABOUT</div>
+            <div className={"accent"} id={"experience-tab"} onClick={() => { document.getElementById("experience-top").scrollIntoView({behavior: "smooth"}) }}>DETAILS</div>
+            <div className={"accent"} id={"projects-tab"} onClick={() => { document.getElementById("projects-top").scrollIntoView({behavior: "smooth"}) }}>PROJECTS</div>
+            <div className={"accent"} id={"blog-tab"} onClick={() => { document.getElementById("blog-container").scrollIntoView({behavior: "smooth"}) }}>TECH BLOG</div>
+          </Menu>
+        </div>
+      </ProSidebar>
+      <div id={ "about-top" } style={{ display: "block", width: "100%", "margin-left": "300px" }}>
         <div style={{ width: "70vw", height: "100vh" }}>
           <About/>
         </div>

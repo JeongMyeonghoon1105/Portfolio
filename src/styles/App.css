@@ -2,6 +2,11 @@
   --active-font: rgb(129, 129, 129);
 }
 
+#root {
+  display: block;
+  width: 100vw !important;
+}
+
 .App {
   text-align: center;
 }
