@@ -46,9 +46,9 @@ function Basic() {
   });
 
   return (
-    <div style={{ margin: "0", width: "100vw", display: "flex", "overflow-x": "hidden" }}>
+    <div className={ "wrap" }>
       <ProSidebar className={"side-bar"}>
-        <div className={"side-bar-inner"} style={{ width: "300px", height: "100vh" }}>
+        <div className={"side-bar-inner"}>
           <SidebarHeader className={"image"}>
             <img src={src} alt="profile" className={ "profile" }></img>
           </SidebarHeader>
@@ -60,7 +60,7 @@ function Basic() {
           </Menu>
         </div>
       </ProSidebar>
-      <div id={ "about-top" } style={{ display: "block", width: "100%", "margin-left": "300px", "overflow-x": "hidden" }}>
+      <div id={ "about-top" }>
         <div style={{ width: "100%", height: "100vh" }}>
           <About/>
         </div>
