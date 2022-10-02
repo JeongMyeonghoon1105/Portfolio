@@ -8,7 +8,7 @@
   /* padding: 100px 70px 200px 70px; */
   position: absolute;
   width: 100%;
-  height: 550px;
+  height: 600px;
   top: 0;
   bottom: 0;
   margin: auto 70px;
@@ -21,10 +21,10 @@
 
 .experience-subtitle {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgb(129, 129, 129);
 }
 
 .experience-content {
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }

@@ -21,29 +21,37 @@ function Basic() {
     let about = document.getElementById("about-container").scrollHeight;
     let experience = document.getElementById("experience-container").scrollHeight + about;
     let projects = document.getElementById("projects-container").scrollHeight + experience;
+    let tabs = [
+      document.getElementById("about-tab"),
+      document.getElementById("experience-tab"),
+      document.getElementById("projects-tab"),
+      document.getElementById("blog-tab")
+    ]
+
+    function activeTab(i) {
+      tabs.forEach((elem, index, arr) => {
+        if (i === index) {
+          arr[index].style.color="white";
+        } else {
+          arr[index].style.color="gray";
+        }
+      })
+    }
     
     if (window.scrollY > projects) {
-      document.getElementById("about-tab").style.color="white";
-      document.getElementById("experience-tab").style.color="white";
-      document.getElementById("projects-tab").style.color="white";
-      document.getElementById("blog-tab").style.color="gray";
+      activeTab(3);
     } else if (window.scrollY > experience) {
-      document.getElementById("about-tab").style.color="white";
-      document.getElementById("experience-tab").style.color="white";
-      document.getElementById("projects-tab").style.color="gray";
-      document.getElementById("blog-tab").style.color="white";
+      activeTab(2);
     } else if (window.scrollY > about) {
-      document.getElementById("about-tab").style.color="white";
-      document.getElementById("experience-tab").style.color="gray";
-      document.getElementById("projects-tab").style.color="white";
-      document.getElementById("blog-tab").style.color="white";
+      activeTab(1);
     } else {
-      document.getElementById("about-tab").style.color="gray";
-      document.getElementById("experience-tab").style.color="white";
-      document.getElementById("projects-tab").style.color="white";
-      document.getElementById("blog-tab").style.color="white";
+      activeTab(0);
     }
   });
+
+  function scrollToTab(direction) {
+    document.getElementById(direction).scrollIntoView({ behavior: "smooth" })
+  }
 
   return (
     <div className={ "wrap" }>
@@ -53,10 +61,10 @@ function Basic() {
             <img src={src} alt="profile" className={ "profile" }></img>
           </SidebarHeader>
           <Menu iconShape="square" style={{ margin: "0px 50px" }}>
-            <div className={"accent"} id={"about-tab"} onClick={() => { document.getElementById("about-top").scrollIntoView({behavior: "smooth"}) }}>ABOUT</div>
-            <div className={"accent"} id={"experience-tab"} onClick={() => { document.getElementById("experience-top").scrollIntoView({behavior: "smooth"}) }}>DETAILS</div>
-            <div className={"accent"} id={"projects-tab"} onClick={() => { document.getElementById("projects-top").scrollIntoView({behavior: "smooth"}) }}>PROJECTS</div>
-            <div className={"accent"} id={"blog-tab"} onClick={() => { document.getElementById("blog-container").scrollIntoView({behavior: "smooth"}) }}>TECH BLOG</div>
+            <div className={"accent"} id={"about-tab"} onClick={() => { scrollToTab("about-top") }}>ABOUT</div>
+            <div className={"accent"} id={"experience-tab"} onClick={() => { scrollToTab("experience-top") }}>DETAILS</div>
+            <div className={"accent"} id={"projects-tab"} onClick={() => { scrollToTab("projects-top") }}>PROJECTS</div>
+            <div className={"accent"} id={"blog-tab"} onClick={() => { scrollToTab("blog-container") }}>TECH BLOG</div>
           </Menu>
         </div>
       </ProSidebar>
